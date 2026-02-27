@@ -1,0 +1,52 @@
+* {
+    background-color:      rgba (0, 0, 0, 80%);
+    other: rgba (0, 0, 0, 0%);
+    border-color:          #797b80;
+    text-color:           #ebebeb;
+    font:            "Iosevka 12";
+}
+window {
+    width:      15%;
+    y-offset:   5;
+    border:     1;
+    border-radius: 4;
+    padding:    2 10;
+    background-color: @background-color;
+    children:   [ horibox ];
+}
+horibox {
+    orientation: horizontal;
+    background-color: @other;
+    children:   [ prompt, entry, listview ];
+}
+listview {
+    border: 0;
+    background-color: @other;
+    layout:     horizontal;
+    spacing:    4px;
+    lines:      1;
+}
+entry {
+    text-color:      @text-color;
+    background-color: @other;
+    expand:     false;
+    width:      10em;
+}
+element {
+    padding: 0px 2px;
+}
+element.normal.normal {
+    background-color: @other;
+}
+element.selected.normal {
+    text-color: @text-color;
+    background-color: @other;
+}
+element.alternate.normal {
+    text-color: @text-color;
+    background-color: @other;
+}
+element selected {
+    background-color: @other;
+    background-color: #00000000;
+}

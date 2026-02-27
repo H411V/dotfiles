@@ -1,0 +1,17 @@
+@import "spotlight-dark.rasi"
+
+configuration {
+	modi: "drun";
+	location: 2;
+	show-icons: false;
+	terminal: "kitty";
+	drun-display-format: "{name}";
+}
+
+prompt {
+	enabled: false;
+}
+
+entry {
+	placeholder: "something...";
+}
